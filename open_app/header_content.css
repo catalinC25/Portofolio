@@ -1,0 +1,326 @@
+
+/* ======================== LEFT MENU ======================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerPage {
+    background-color: white;
+    width: 100%;
+}
+
+.headerLeftSide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logoText {
+    font-family: "Lexend", sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.logoContainer {
+    background-color: #176A73;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    padding: 10px;
+    width: 320px;
+    font-size: 15px;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    background-color: #E8E8E8;
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: #808080;
+}
+
+input[type="search"]:focus {
+    outline: 1px solid #D9D9D9;
+}
+
+/* ======================== CENTER MENU ======================== */
+
+.centerSide {
+    height: 100%;
+}
+
+.iconsWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.homeIconWrap {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.underLine {
+    height: 2px;
+    width: 1px;
+    background-color: #176A73;
+    width: 100px;
+    bottom: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.homeIconWrap:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.homeIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 15px;
+}
+
+.groupsIconWrap {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.friendsIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 15px;
+    transition: 0.7s;
+}
+
+.friendsIcon:hover {
+    background-color: #C9C9C9;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.uploadIconWrap {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.uploadIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 15px;
+    transition: 0.7s;
+}
+
+.uploadIcon:hover {
+    background-color: #C9C9C9;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+/* ======================== RIGHT MENU ======================== */
+
+.messageIcon {
+    width: 25px;
+    height: 25px;
+    transition: 0.7s;
+}
+
+.messageWrap {
+    background-color: #C9C9C9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.messageWrap:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.notifyIcon {
+    width: 25px;
+    height: 25px;
+    transition: 0.7s;
+}
+
+.notifyWrap {
+    background-color: #C9C9C9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.notifyWrap:hover {
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+.avatarImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.elementsWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+/* ======================== FULL HEADER ======================== */
+
+.headerWrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+}
+
+.headerPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.hiddenMenu {
+    display: none;
+}
+
+/* ======================== RESPONSIVE ======================== */
+@media only screen and (max-width: 1675px) {
+
+    .centerSide {
+        display: none;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .menuWarp {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        cursor: pointer;
+    }
+
+    .menuIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hiddenMenu {
+        display: flex;
+    }
+
+    .buttonsMenu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .centerSide {
+        display: none;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+
+    .menuWarp {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        cursor: pointer;
+    }
+
+    .menuIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hiddenMenu {
+        display: flex;
+    }
+
+    .buttonsMenu {
+        display: none;
+    }
+
+    .headerWrap {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 88%;
+    }
+    
+    .headerPage {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+}

@@ -1,0 +1,242 @@
+
+/* ============== PERSONAL STORY============== */
+
+.personalPost {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 170px;
+    height: 300px;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+    overflow: hidden;
+    background-color: white;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.popularUploads {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 13px;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.centerContentAvatar {
+    position: absolute;
+    width: 230px;
+    z-index: 1;
+    transition: 0.7s;
+}
+
+.addBtnBackground {
+    position: absolute;
+    bottom: 46px;
+    background-color: #176A73;
+}
+
+.addBtnBackground {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-sizing: content-box;
+}
+
+.addStory {
+    width: 40px;
+    height: 40px;
+}
+
+.storyText {
+    position: absolute;
+    bottom: 15px;
+    z-index: 3;
+}
+
+.backgroudColor {
+    position: absolute;
+    z-index: 4;
+    background-color: black;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.backgroudColor:hover {
+    transition: 0.7s;
+    opacity: 0.25;
+}
+
+.downSidePlace {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: inherit;
+    height: 71px;
+    z-index: 2;
+}
+
+.avatarWarp {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.personalPost:hover .centerContentAvatar {
+    transform: scale(1.2);
+}
+
+/* ============== PUBLIC STORY ============== */
+
+.publicPostOne {
+    width: 170px;
+    height: 300px;
+}
+
+.gamingStory {
+    max-width: 200px;
+}
+
+.gamingAvatar {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.publicPostOne {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+}
+
+.gamingText {
+    position: absolute;
+    z-index: 4;
+    left: 20px;
+    bottom: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.gamingAvatar {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+}
+
+.gamingStory {
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+
+.insideElements {
+    display: flex;
+    flex-direction: column;
+}
+
+.publicBackgroudColor {
+    position: absolute;
+    z-index: 4;
+    background-color: black;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    opacity: 0;
+    transition: 0.7s;
+    border-radius: 10px;
+}
+
+.publicBackgroudColor:hover {
+    transition: 0.7s;
+    opacity: 0.25;
+}
+
+.publicPostOne:hover .gamingStory {
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+
+.stories {
+    display: flex;
+    gap: 13px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+.nextStory {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+    cursor: pointer;
+    bottom: 150px;
+    left: 900px;
+    z-index: 50;
+}
+
+.nextStory:hover {
+    background-color: #E8E8E8;
+}
+
+.nextStory:active {
+    background-color: #C9C9C9;
+}
+
+.centerContent {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.nextStoryIn {
+    display: none;
+}
+
+.nextStoryIn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+    cursor: pointer;
+    bottom: 150px;
+    z-index: 50;
+}
+
+.nextStoryIn:hover {
+    background-color: #E8E8E8;
+}
+
+.nextStoryIn:active {
+    background-color: #C9C9C9;
+}
+
+.beginingContent {
+    position: relative;
+}

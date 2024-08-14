@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8E8E8;
+}
+
+.mainDescription h2 {
+    color: #176A73;
+    font-family: "Lexend", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.mainDescription h3 {
+    color: #0D0D0D;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.mainDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 10px;
+    width: 800px;
+}
+
+.logInForm {
+    width: 400px;
+    height: 350px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 13px;
+
+    background-color: white;
+    border-radius: 8px;
+
+    box-shadow: 0px 2px 15px #cccccc;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    color: #D9D9D9;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 1px solid #D9D9D9;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    outline: 1px solid #D9D9D9;
+}
+
+.logInBtns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 13px;
+    margin-top: 15px;
+}
+
+.logInBtns button {
+    padding: 15px;
+    background-color: #176A73;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.logInBtns a {
+    font-family: "Lexend", sans-serif;
+    color: #176A73;
+}
+
+.logInBtns a:active {
+    color: #9BB5BF;
+}
+
+
+.logInBtn[type="submit"] {
+    color: white;
+    font-size: 18px;
+}
+
+.createAccountBtn {
+    width: 50%;
+    padding: 5px;
+    padding: 15px;
+    background-color: #53B54C;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.createAccountBtn[type="button"] {
+    font-family: "Lexend", sans-serif;
+    color: white;
+}
+
+.formDownSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+hr {
+    width: 100%;
+}
+
+.wrapElements {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+@media only screen and (max-width: 1350px) {
+    .mainDescription {
+        width: 50%;
+        min-width: 80%;
+    }
+
+    .mainDescription h2 {
+        font-size: 40px;
+    }
+
+    .mainDescription h3 {
+        font-size: 25px;
+    }
+
+    .wrapElements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: start;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .logInForm {
+        max-width: 320px;
+    }
+
+    .createAccountBtn {
+        width: 70%;
+    }
+
+    .mainDescription h2 {
+        font-size: 40px;
+    }
+
+    .mainDescription h3 {
+        font-size: 25px;
+    }
+}
+

@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #E8E8E8;
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}

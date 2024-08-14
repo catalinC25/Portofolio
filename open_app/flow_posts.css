@@ -1,0 +1,400 @@
+
+.flowPosts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.quickPostLine {
+    height: 1px;
+    width: 90%;
+    background-color: #C9C9C9;
+}
+
+.quickPost {
+    background-color: white;
+    border-radius: 20px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+}
+
+.sharehubPosts {
+    width: 100%;
+}
+
+.quiciPostInput {
+    width: 100%;
+}
+
+.quiciPostInput[type="text"] {
+    padding: 10px;
+    max-width: 90%;
+    font-size: 15px;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    background-color: #E8E8E8;
+    transition: 0.7s
+}
+
+.quiciPostInput::placeholder {
+    font-size: 15px;
+    color: #808080;
+}
+
+.quiciPostInput[type="text"]:focus {
+    outline: 1px solid #D9D9D9;
+    background-color: white;
+    transition: 0.7s
+}
+
+.quickPost div {
+    display: flex;
+    flex-direction: row;
+}
+
+.quickPostAboveElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 13px;
+    width: 100%;
+}
+
+.quickPostBelowElements {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.quickPostUploadFile {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 13px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #176A73;
+    width: 250px;
+}
+
+.quickPostUploadFile:hover {
+    background-color: #202E40;
+}
+
+.quickPostAskFile {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 13px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #176A73;
+    width: 250px;
+}
+
+.quickPostAskFile:hover {
+    background-color: #202E40;
+}
+
+.quickPost h5 {
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* ======================== PUBLIC CONTENT ======================== */
+
+.postImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+    cursor: pointer;
+}
+
+.publicPost {
+    width: inherit;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.postOptions {
+    cursor: pointer;
+}
+
+.postOptions img {
+    padding: 3px;
+    box-sizing: content-box;
+}
+
+.postOptions img:hover {
+    background-color: #C9C9C9;
+    border-radius: 50%;
+}
+
+.userDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.userDetails .userName {
+    font-size: 20px;
+}
+
+.userName:hover {
+    cursor: pointer;
+}
+
+.textInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.upsideView {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imageContent img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.contentElements {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.downContent {
+    display: flex;
+    gap: 15px;
+}
+
+.iconLike, .iconLove {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.iconLike {
+    background-color: #176A73;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.iconLove {
+    background-color: #BF3030;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.postReactions h5 {
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.postReactions {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.downContent h5:hover {
+    text-decoration-line: underline;
+}
+
+.postIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+}
+
+.postReactions {
+    display: flex;
+    flex-direction: column;
+}
+
+.postReactionLine {
+    width: 95%;
+    height: 1px;
+    background-color: #C9C9C9;
+    display: flex;
+}
+
+.postReactionsWarp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.action img {
+    width: 35px;
+    height: 35px;
+}
+
+.action h5 {
+    font-size: 15px;
+}
+
+.action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    padding: 5px 40px;
+    cursor: pointer;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.actionsContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action:hover {
+    background-color: #C9C9C9;
+}
+
+.downContent .comments, .likes {
+    font-weight: 800;
+}
+
+.firstComment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.commentText {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstComment {
+    display: flex;
+    gap: 13px;
+}
+
+.commentText {
+    background-color: #D9D9D9;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.commentSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.commentAvatar {
+    cursor: pointer;
+}
+
+.userComment {
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.publicPost .postReactionLine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.mainAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.commentSendBtn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 7px;
+    box-sizing: content-box;
+}
+
+.commentSendBtn:hover {
+    background-color: #C9C9C9;
+}
+
+.commentInput[type="text"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 35px;
+    border: 1px solid #D9D9D9;
+    background-color: #E8E8E8;
+    transition: 0.7s
+}
+
+.commentInput::placeholder {
+    font-size: 15px;
+    color: #808080;
+}
+
+.commentInput[type="text"]:focus {
+    outline: 1px solid #D9D9D9;
+    background-color: white;
+    transition: 0.7s
+}
+
+.myComment {
+    display: flex;
+    flex-direction: row;
+
+    align-content: center;
+    gap: 13px;
+    width: 100%;
+}
+
+.commentInput {
+    max-width: 100%;
+}
+
+.commentTwoelements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 13px;
+    width: 100%;
+}

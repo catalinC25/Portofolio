@@ -1,0 +1,202 @@
+
+/* ======= HEADER ======= */
+
+header {
+    padding-top: 25px;
+}
+
+.landingPageHeader {
+    background-color: #202E40;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.logoText {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.rightSideMenu a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.navBtn {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.rightSideMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.headerContent a {
+    color: white;
+    text-decoration-line: none;
+}
+
+#createAccount {
+    background-color: #53B54C;
+    border-radius: 5px;
+    display: flex;
+    max-width: 176px;
+}
+
+#logIn {
+    background-color: #9BB5BF;
+    border-radius: 5px;
+}
+
+.headerLeftSide h1, p {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headerLeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.headerLeftSide h1 {
+    color: white;
+}
+
+.leftSideParagraph {
+    color: #9BB5BF;
+    opacity: 0.6;
+}
+
+.headerLeftSide {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerRightSide {
+    position: relative;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondIl {
+    max-width: 70%;
+    border-radius: 8px;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+/* ======= MAIN ======= */
+
+.contentDescription {
+    margin-top: 80px;
+}
+
+/* ======= MAIN - CARDS ======= */
+
+.sectionCard {
+    width: 330px;
+    height: 450px;
+    background-color: #383838;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sectionCard img {
+    max-width: 70%;
+    border-radius: 8px;
+}
+
+.cardDescription h3 {
+    font-weight: 700;
+}
+
+.cardDescription h3, p {
+    color: white;
+}
+
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+}
+
+.detailsBtn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.sectionCard:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px 1px #C9C9C9;
+}
+
+/* ======= MAIN - APP DESCRIPTION ======= */
+
+.appDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+    margin-top: 80px;
+    background-color: #202E40;
+    padding: 40px 0px;
+}
+
+.descriptionText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.descriptionText h1 {
+    font-size: 30px;
+    color: white;
+}
+
+.descriptionText p {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.6;
+    max-width: 700px;
+    color: #9BB5BF;
+}

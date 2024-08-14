@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #E8E8E8;
+    height: 2000px;
+    position: relative;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.centerElements {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.centerContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.centerElementWarp {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 25px;
+}
+
+.mainPage, .profilePage {
+    text-decoration-line: none;
+}
+
+.avatarShow h3 {
+    color: black;
+}
+
+/* ======================== RESPONSIVE STORIES ======================== */
+@media only screen and (max-width: 1675px) {
+
+    .leftSideMenu {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1375px) {
+
+    .rightSideMenu {
+        display: none;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .nextStoryIn {
+        display: block;
+        left: 900px;
+    }
+
+    .popularUploads {
+        max-width: 1000px;
+        position: static;
+    }
+
+}
+
+@media only screen and (max-width: 1030px) {
+
+    .nextStory {
+        display: none;
+
+    }
+
+    .popularUploads, .centerContent, .publicContent {
+        max-width: 700px;
+        position: static;
+    }
+
+
+    .nextStoryIn {
+        display: block;
+        left: 600px;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+
+    .popularUploads, .centerContent {
+        max-width: 500px;
+        position: static;
+    }
+
+    .stories {
+        position: static;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .nextStoryIn {
+        display: block;
+        left: 400px;
+    }
+
+    .quickPostAskFile, .quickPostUploadFile {
+        max-width: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .popularUploads {
+        max-width: 450px;
+        position: static;
+    }
+
+    .stories h3 {
+        font-size: 15px;
+    }
+
+    .stories img {
+        max-width: 170px;
+    }
+
+    .stories > div {
+        width: 120px;
+        height: 250px;
+    }
+
+    .centerElements {
+        position: static;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .nextStoryIn {
+        display: block;
+        bottom: 130px;
+        left: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .popularUploads {
+        max-width: 370px;
+        position: static;
+    }
+
+    .stories h3 {
+        font-size: 15px;
+    }
+
+    .stories img {
+        max-width: 170px;
+    }
+
+    .stories > div {
+        width: 120px;
+        height: 250px;
+    }
+
+    .centerElements {
+        position: static;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .nextStoryIn {
+        display: block;
+        bottom: 130px;
+        left: 270px;
+    }
+
+    .quickPostAskFile, .quickPostUploadFile {
+        max-width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .popularUploads {
+        max-width: 370px;
+        position: static;
+    }
+
+    .stories h3 {
+        font-size: 15px;
+    }
+
+    .stories img {
+        max-width: 170px;
+    }
+
+    .stories > div {
+        width: 120px;
+        height: 250px;
+    }
+
+    .centerElements {
+        position: static;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .nextStoryIn {
+        display: block;
+        bottom: 130px;
+        left: 270px;
+    }
+
+    .quickPostAskFile, .quickPostUploadFile {
+        max-width: 150px;
+    }
+
+}
+
+/* ======================== RESPONSIVE POSTS ======================== */
+@media only screen and (max-width: 730px) {
+
+    .actionsContainer > div {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .postIcons img {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    .sharehubPosts, .publicContent {
+        max-width: 370px;
+    }
+
+    .stories h3 {
+        font-size: 15px;
+    }
+
+    .stories img {
+        max-width: 170px;
+    }
+
+    .stories > div {
+        width: 120px;
+        height: 250px;
+    }
+
+    .centerElements {
+        position: static;
+    }
+
+    .nextStory {
+        display: none;
+    }
+
+    .quickPostAskFile, .quickPostUploadFile {
+        max-width: 150px;
+    }
+
+    .action h5 {
+        display: none;
+    }
+
+}
