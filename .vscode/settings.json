@@ -1,0 +1,22 @@
+{
+    "editor.fontFamily": "Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "300",
+    "editor.tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "keyword",
+                        "storage",
+                        "string.quoted",
+                        "string.template"
+                    ],
+                    "settings": {
+                        "fontStyle": ""
+                    }
+                }
+            ]
+        },
+        "editor.lineHeight": 25,
+        "editor.fontSize": 14
+    }

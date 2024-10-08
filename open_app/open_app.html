@@ -22,7 +22,6 @@
   </head>
 
   <body>
-    
     <!-- PAGE HEADER -->
     <header class="headerPage">
       <div class="headerWrap">
@@ -107,7 +106,7 @@
             <a href="/profile_page/profile_page.html" class="profilePage">
               <div class="avatarShow">
                 <img src="/Graphs/main_avatar.jpg" class="leftSideAvatar" />
-                <h3>Json McDonald's</h3>
+                <h3 id="mainUser">Json McDonald's</h3>
               </div>
             </a>
 
@@ -253,7 +252,7 @@
           </div>
 
           <!-- PUBLIC POST -->
-          <div class="publicContent">
+          <div class="publicContent"  id="mainPost">
             <div class="publicPost">
 
               <!-- POST UPSIDE VIEW -->
@@ -267,8 +266,8 @@
                 </div>
 
                 <div class="postOptions">
-                  <img src="/Graphs/Icons/close_function.png" class="icon"/>
-                  <img src="/Graphs/Icons/more_function_dots.png" class="icon"/>
+                  <img src="/Graphs/Icons/close_function.png" class="icon" id="closePostBtn"/>
+                  <img src="/Graphs/Icons/more_function_dots.png" class="icon" id="postMoreOptionsBtn"/>
                 </div>
               </div>
 
@@ -292,7 +291,7 @@
                   </div>
                   
                   <div class="downContent">
-                    <h5 class="comments"><span>55</span> Comments</h5>
+                    <h5 class="comments"><span id="numberOfComments">55</span> Comments</h5>
                   </div>
                 </div>
                 <div class="postReactionLine"></div>
@@ -318,7 +317,7 @@
               <div class="postReactionLine"></div>
 
               <!-- COMMENT SECTION -->
-              <div class="commentSection">
+              <div class="commentSection" id="commentsSection">
                 <div class="firstComment">
                   <img src="/Graphs/Chat people/img7.jpg" class="commentAvatar"/>
                   <div class="commentText">
@@ -327,13 +326,13 @@
                   </div>
                 </div>
 
-                <div class="myComment">
-                  <div class="commentTwoelements">
-                    <img src="/Graphs/main_avatar.jpg" class="mainAvatar"/>
-                    <input type="text" placeholder="Wite a comment..." class="commentInput"/>
-                  </div>
-                  <img src="/Graphs/FlowPosts/send.png" class="commentSendBtn"/>
+              </div>
+              <div class="myComment">
+                <div class="commentTwoelements">
+                  <img src="/Graphs/main_avatar.jpg" class="mainAvatar"/>
+                  <input type="text" placeholder="Wite a comment..." class="commentInput" id="commentInput"/>
                 </div>
+                <img src="/Graphs/FlowPosts/send.png" class="commentSendBtn" id="commentSubmit"/>
               </div>
             </div>
           </div>
